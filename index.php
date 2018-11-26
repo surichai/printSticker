@@ -85,8 +85,7 @@ $printer->setBarcodeTextPosition($position);
 $printer->barcode($id, Printer::BARCODE_CODE93);
 $printer->text("tid:".$tid."\n");
 $printer->text("imei:".$id);
-$printer->feed();
-$printer->feed(1);
+$printer->feed(5);
 $printer->feed();
 
 }
